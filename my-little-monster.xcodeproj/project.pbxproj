@@ -13,6 +13,7 @@
 		1D3402BE1CD1A694005212C6 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D3402B91CD1A694005212C6 /* death.wav */; };
 		1D3402BF1CD1A694005212C6 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D3402BA1CD1A694005212C6 /* heart.wav */; };
 		1D3402C01CD1A694005212C6 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D3402BB1CD1A694005212C6 /* skull.wav */; };
+		1D3402C21CD78D8C005212C6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3402C11CD78D8C005212C6 /* Button.swift */; };
 		1DB2AF591CBF35F000250827 /* dragimg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2AF581CBF35F000250827 /* dragimg.swift */; };
 		1DD489DF1CBC8D0000D2528A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD489DE1CBC8D0000D2528A /* AppDelegate.swift */; };
 		1DD489E11CBC8D0000D2528A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD489E01CBC8D0000D2528A /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		1D3402B91CD1A694005212C6 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		1D3402BA1CD1A694005212C6 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		1D3402BB1CD1A694005212C6 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		1D3402C11CD78D8C005212C6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		1DB2AF581CBF35F000250827 /* dragimg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dragimg.swift; sourceTree = "<group>"; };
 		1DD489DB1CBC8D0000D2528A /* my-little-monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-little-monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD489DE1CBC8D0000D2528A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				1DD489EA1CBC8D0000D2528A /* Info.plist */,
 				1DB2AF581CBF35F000250827 /* dragimg.swift */,
 				1D3402B51CD045B8005212C6 /* monsterimg.swift */,
+				1D3402C11CD78D8C005212C6 /* Button.swift */,
 			);
 			path = "my-little-monster";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3402C21CD78D8C005212C6 /* Button.swift in Sources */,
 				1D3402B61CD045B8005212C6 /* monsterimg.swift in Sources */,
 				1DD489E11CBC8D0000D2528A /* ViewController.swift in Sources */,
 				1DB2AF591CBF35F000250827 /* dragimg.swift in Sources */,

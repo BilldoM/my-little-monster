@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var penaltyImg: UIImageView!
     @IBOutlet weak var penaltyImg2: UIImageView!
     @IBOutlet weak var penaltyImg3: UIImageView!
+    @IBOutlet weak var playAgainBtn: Button!
+    
 
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
     let MAX_PENALTIES = 3
-    
     var penalties = 0
     var timer: NSTimer!
+    
     var monsterHappy = false
     var currentItem: UInt32 = 0
     
@@ -35,9 +37,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        gameStateBegining()
         
         
+    }
+    
+    func gameStateBegining() {
         
+        hideLabels()
+        monsterHappy = false
+        
+        monsterImg.playIdleAnimation()
         foodImage.dropTarget = monsterImg
         heartImage.dropTarget = monsterImg
         
@@ -69,10 +79,10 @@ class ViewController: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
-    
-        startTimer()
         
+        startTimer()
     }
+
     
     
     
@@ -102,7 +112,6 @@ class ViewController: UIViewController {
     }
     
     func changeGameState() {
-        
         
         if !monsterHappy {
             
@@ -152,11 +161,33 @@ class ViewController: UIViewController {
         
     }
     
+    
+    func hideLabels() {
+        playAgainBtn.hidden = true
+        playAgainBtn.center = CGPointMake(playAgainBtn.center.x - 500, playAgainBtn.center.y)
+    }
+
+    @IBAction func onPressResetGame(sender: AnyObject) {
+        gameStateBegining()
+        
+        
+        
+    }
+    
     func gameOver() {
         timer.invalidate()
         monsterImg.playDeathAnimation()
         sfxDeath.play()
+        
+        
+        playAgainBtn.hidden = false
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+           self.playAgainBtn.center = CGPointMake(self.playAgainBtn.center.x + 500, self.playAgainBtn.center.y)
+        })
+
     }
 
-}
 
+
+
+}
