@@ -168,7 +168,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onPressResetGame(sender: AnyObject) {
-        gameStateBegining()
+        musicPlayer.stop()
         
         
         
